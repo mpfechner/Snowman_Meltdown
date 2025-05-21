@@ -1,8 +1,5 @@
-import random
-
-# List of secret words
-WORDS = ["python", "git", "github", "snowman", "meltdown"]
+import game_logic as gl
 
 
 if __name__ == "__main__":
-    play_game()
+    gl.play_game()
