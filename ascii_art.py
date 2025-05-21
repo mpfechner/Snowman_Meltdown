@@ -1,32 +1,28 @@
-STAGES = [
-     # Stage 0: Full snowman
-     """
-      ___  
-     /___\\ 
-     (o o) 
-     ( : ) 
-     ( : ) 
-     """,
-     # Stage 1: Bottom part starts melting
-     """
-      ___  
-     /___\\ 
-     (o o) 
-     ( : ) 
-     """,
-     # Stage 2: Only the head remains
-     """
-      ___  
-     /___\\ 
-     (o o) 
-     """,
-     # Stage 3: Snowman completely melted
-     """
-      ___  
-     /___\\ 
-     """
- ]
+STAGES = [# Stage 0: Full snowman
+    """
+     ___  
+    /___\\ 
+    (o o) 
+    ( : ) 
+    ( : ) 
+    """, # Stage 1: Bottom part starts melting
+    """
+     ___  
+    /___\\ 
+    (o o) 
+    ( : ) 
+    """, # Stage 2: Only the head remains
+    """
+     ___  
+    /___\\ 
+    (o o) 
+    """, # Stage 3: Snowman completely melted
+    """
+     ___  
+    /___\\ 
+    """]
 
+# ASCII Art to show when player has lost
 GAME_OVER = """
    ____                         ___                 
   / ___| __ _ _ __ ___   ___   / _ \\__   _____ _ __ 
@@ -36,7 +32,8 @@ GAME_OVER = """
 
 """
 
-YOU_WIN= r"""
+# ASCII Art to show when player has won
+YOU_WIN = r"""
 #     #                                                                                                                                ### 
  #   #   ####  #    #     ####    ##   #    # ###### #####     ##### #    # ######     ####  #    #  ####  #    # #    #   ##   #    # ### 
   # #   #    # #    #    #       #  #  #    # #      #    #      #   #    # #         #      ##   # #    # #    # ##  ##  #  #  ##   # ### 
