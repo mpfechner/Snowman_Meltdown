@@ -1,5 +1,5 @@
 import random
-from ascii_art import STAGES
+import ascii_art as aa
 
 # List of secret words
 WORDS = ["python", "git", "github", "snowman", "meltdown"]
@@ -25,7 +25,7 @@ def clear_screen():
 def display_game_state(mistakes, secret_word, guessed_letters):
     # Display the snowman stage for the current number of mistakes.
     if mistakes < max_mistakes:
-        print(STAGES[mistakes])
+        print(aa.STAGES[mistakes])
     # Build a display version of the secret word.
     display_word = ""
     for letter in secret_word:
@@ -71,11 +71,12 @@ def run_single_game():
             print(RED+"Wrong guess!"+RESET)
 
         if all(char in guessed_letters for char in secret_word):
-            print(GREEN+"You saved the snowman!"+RESET)
+            print(GREEN+aa.YOU_WIN+RESET)
             break
 
         if mistakes >= max_mistakes:
-            print(f"{RED}Game over! The word was: {secret_word}.{RESET}")
+            print(f"{RED}{aa.GAME_OVER}{RESET}")
+            print(f"{RED}The word was: {secret_word}.{RESET}")
             break
 
 
